@@ -9,9 +9,9 @@ export const authSlice = createSlice({
     isFullscreen: false,
     isDashboard: false,
     selectedrequest: null,
-    selectedproject:null,
+    selectedproject: null,
   },
-  
+
   reducers: {
     setPageState: (state, action) => {
       state.pagestate = action.payload;
@@ -34,7 +34,6 @@ export const authSlice = createSlice({
     setSelectedProject: (state, action) => {
       state.selectedproject = action.payload;
     },
-  
   },
 });
 
@@ -46,5 +45,5 @@ export const {
   setIsFullscreen,
   setIsDashboard,
   setSelectedRequest,
-  setSelectedProject
+  setSelectedProject,
 } = authSlice.actions;
